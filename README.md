@@ -1,6 +1,6 @@
 # SUPER README
 
-* voici le lien: https://dashboard.heroku.com/apps/jamaidecentrois/settings
+* voici le lien: https://jamaidecentrois.herokuapp.com/
 
 * -------------------------------------------------
 * chois des landing page : public viser

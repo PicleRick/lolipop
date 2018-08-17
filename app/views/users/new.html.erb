@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <img class="navbar-brand op-logo" src="https://s33.postimg.cc/h53pobdnj/onepiecelogo.png">
+        <span class="navbar-brand op-logo">NEWS LETTERS</span>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,14 +19,31 @@
       </ul>
 
       <span class="navbar-text">
-        <%= link_to "subscribe to the newsletters", signup_path %>
+        
       </span>
 
     </div>
 </nav>
+<div class="container">
+    <h2 id="subscribe">Subscribe to our newsletters</h2>
 
-<div class="col banner banner-op">
-  <div  class="banner-title"  >
-    <h1 id="Welcome">Welcome to the new world</h1>
-  </div>
+    <%= form_for @user, url: {action: "create"} do |f| %>
 
+    <div class="row">
+        <div class="col form-group name">
+            <%=f.label :username %>
+        <%=f.text_field :username, placeholder: "Your name" %>
+    </div>
+
+
+    <div class="col form-group mail">
+        <%=f.label :email %>
+        <%=f.text_field :email, placeholder: "ex@email.com" %>
+    </div>	
+</div>
+
+<div class="validation form-group"> 
+	 <%= f.submit class: "btn btn-info btn-default" %>
+</div>
+<%end%>
+</div>

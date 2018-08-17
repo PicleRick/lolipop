@@ -36,3 +36,17 @@
 a:hover {
     background-color: #D10707;
 }
+
+.container{
+	text-align: center;
+}
+#subscribe{
+	margin-top: 300px;
+	margin-bottom: 50px;
+}
+.name{
+	border-radius: 3px;
+}
+.mail{
+	border-radius: 3px;
+}

@@ -7,27 +7,28 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/">OnePiece<span class="sr-only">(current)</span></a>
+              <%= link_to "OnePiece", "/", class:"nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/landing_pages/draw">Drawing</a>
+              <%= link_to "Drawing", "/landing_pages/draw", class:"nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/landing_pages/space">Space</a>
+              <%= link_to "Space", "/landing_pages/space", class:"nav-link" %>
             </li>
-          </ul>
+      </ul>
 
-          <span class="navbar-text">
-            You are a star among the stars
-          </span>
+      <span class="navbar-text">
+        <%= link_to "subscribe to the newsletters", signup_path %>
+      </span>
 
-        </div>
-    </nav>
-
-    <div class="banner banner-space">
-      <div  class="banner-title"  >
-        <h1 id="Welcome" >Welcome to our page, be illuminate as space</h1>
-      </div>
     </div>
+</nav>
+
+<div class="banner banner-space">
+  <div  class="banner-title"  >
+    <h1 id="Welcome" >Welcome to our page, be illuminate as space</h1>
+  </div>
+</div>
+
